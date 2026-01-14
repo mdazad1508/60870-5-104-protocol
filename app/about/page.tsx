@@ -3,7 +3,7 @@ const AboutPage = () => {
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-orange-300 via-orange-500 to-red-500 text-transparent bg-clip-text">
-          About IEC 60870-5-104 Convertor
+          About IEC 60870-5-104 Protocol Convertor
         </h1>
 
         <div className="space-y-6 text-lg">

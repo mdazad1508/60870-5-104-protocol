@@ -18,9 +18,9 @@ const ContactPage = () => {
         </div>
         <div className="space-y-6 text-lg">
           <p>
-            Hello! I'm Azad, a dedicated SCADA Engineer by profession who loves building cool stuffs
+            Hello! I&apos;m Azad, a dedicated SCADA Engineer by profession who loves building cool stuffs
             in my free time. I love solving problems, and continuously learning new technologies.
-            This project, "104 Convertor," is an example of blending my professional experience with my hobby of development
+            This project, &quot;104 Convertor,&quot; is an example of blending my professional experience with my hobby of development
             to create useful tools.
           </p>
           <p>
