@@ -1,4 +1,5 @@
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import Image from "next/image";
 
 const ContactPage = () => {
   return (
@@ -7,7 +8,14 @@ const ContactPage = () => {
         <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-orange-300 via-orange-500 to-red-500 text-transparent bg-clip-text">
           Contact Me
         </h1>
-
+        <div className="flex justify-center mb-8">
+        <Image
+      src="/pic.png"
+      alt="Hero image"
+      width={400}
+      height={300}
+    />
+        </div>
         <div className="space-y-6 text-lg">
           <p>
             Hello! I'm Azad, a dedicated SCADA Engineer by profession who loves building cool stuffs
