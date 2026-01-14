@@ -3,12 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type ISourceOptions } from "@tsparticles/slim";
+import { loadSlim } from "@tsparticles/slim"; // Import loadSlim
 
 const ParticlesComponent = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
+      await loadSlim(engine); // Load the slim bundle
       // you can load any slim built-in shape
       // in this case we are loading the square shape
       //await loadSquareShape(engine);
@@ -27,10 +29,10 @@ const ParticlesComponent = () => {
       fpsLimit: 60,
       particles: {
         number: {
-          value: 160,
+          value: 3000,
           density: {
             enable: true,
-            value_area: 800,
+            value_area: 12000,
           },
         },
         color: {
@@ -40,7 +42,7 @@ const ParticlesComponent = () => {
           type: "circle",
         },
         opacity: {
-          value: 0.5,
+          value: 1,
           random: true,
           anim: {
             enable: true,
@@ -50,7 +52,7 @@ const ParticlesComponent = () => {
           },
         },
         size: {
-          value: 3,
+          value: 1,
           random: true,
           anim: {
             enable: true,
@@ -62,9 +64,9 @@ const ParticlesComponent = () => {
         move: {
           enable: true,
           speed: 1,
-          direction: "none",
+          direction: "bottom",
           random: true,
-          straight: false,
+          straight: true,
           out_mode: "out",
           bounce: false,
         },
