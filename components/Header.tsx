@@ -24,11 +24,11 @@ const Header = () => {
             <li>
               <Link href="/" className="py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">Home</Link>
             </li>
-            <li>
-              <Link href="/about" className="py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">About</Link>
+             <li>
+              <Link href="/services" className="py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text"> 60870-5-104</Link>
             </li>
             <li>
-              <Link href="/services" className="py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">Services</Link>
+              <Link href="/about" className="py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">About</Link>
             </li>
             <li>
               <Link href="/contact" className="py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">Contact</Link>
@@ -45,11 +45,12 @@ const Header = () => {
               <Link href="/" onClick={() => setIsMenuOpen(false)} className="block py-2 px-4 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">Home</Link>
             </li>
             <li>
-              <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block py-2 px-4 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">About</Link>
+              <Link href="/services" onClick={() => setIsMenuOpen(false)} className="block py-2 px-4 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">60870-5-104</Link>
             </li>
             <li>
-              <Link href="/services" onClick={() => setIsMenuOpen(false)} className="block py-2 px-4 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">Services</Link>
+              <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block py-2 px-4 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">About</Link>
             </li>
+            
             <li>
               <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="block py-2 px-4 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-red-500 hover:text-transparent hover:bg-clip-text">Contact</Link>
             </li>
