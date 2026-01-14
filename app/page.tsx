@@ -73,7 +73,7 @@ export default function Home() {
 
   const inputClasses = "w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-black dark:text-white";
   const cardClasses = "bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md";
-  const titleClasses = "text-2xl font-bold mb-4 text-white middle-align center";
+  const titleClasses = "text-2xl font-bold mb-4 text-orange-300 middle-align center ";
 
   return (
     <main className="container mx-auto p-4 sm:p-8 flex items-center justify-center h-full">

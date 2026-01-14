@@ -10,7 +10,7 @@ const Header = () => {
     <header className="relative z-40 bg-white dark:bg-black text-black dark:text-white p-4 border-b border-gray-200 dark:border-gray-700">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-bold">
-          <Link href="/" className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text font-extrabold text-2xl animate-gradient font-poppins">PROTOCOL CONVERTOR</Link>
+          <Link href="/" className="bg-gradient-to-r from-orange-300 via-orange-500 to-red-500 text-transparent bg-clip-text font-extrabold text-3xl animate-gradient font-poppins transition-all duration-300 hover:scale-105">104 CONVERTOR</Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu" className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
