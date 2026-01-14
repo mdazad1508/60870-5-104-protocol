@@ -6,7 +6,7 @@ const ContactPage = () => {
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-8">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-orange-300 via-orange-500 to-red-500 text-transparent bg-clip-text">
-          Contact Me
+          Say Hii 👋
         </h1>
         <div className="flex justify-center mb-8">
         <Image
@@ -29,13 +29,13 @@ const ContactPage = () => {
           </p>
 
           <div className="mt-10 flex justify-center space-x-8">
-            <a href="mailto:azad.md2015@gmail.com" className="text-blue-500 hover:text-blue-400">
+            <a href="mailto:mdazad15081999@gmail.com" className="text-blue-500 hover:text-blue-400">
               <FaEnvelope size={40} />
             </a>
-            <a href="https://www.linkedin.com/in/md-azad/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400">
+            <a href="https://www.linkedin.com/in/mdazad1508/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400">
               <FaLinkedin size={40} />
             </a>
-            <a href="https://github.com/azad-md" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400">
+            <a href="https://github.com/mdazad1508" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400">
               <FaGithub size={40} />
             </a>
           </div>
