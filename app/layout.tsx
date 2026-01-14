@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ParticlesComponent from "@/components/Particles";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const poppins = Poppins({ subsets: ["latin"], weight: ['400', '700'], variable: '--font-poppins' });
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable}`}>
+        <ParticlesComponent />
         <Header />
         <main className="container mx-auto p-4">{children}</main>
         <Footer />

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Iec104Packet from '@/components/Iec104Packet';
 
 export default function Home() {
   const [asduAddress, setAsduAddress] = useState('');
@@ -75,56 +76,59 @@ export default function Home() {
   const titleClasses = "text-2xl font-bold mb-4 text-white middle-align center";
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-black font-sans text-black dark:text-white">
-      <main className="container mx-auto p-4 sm:p-8 flex items-center justify-center h-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full center-align">
-          
-          <div className={cardClasses}>
-            <h2 className={titleClasses}>ASDU &lt;=&gt; CASDU</h2>
-            <div className="space-y-4">
+    <main className="container mx-auto p-4 sm:p-8 flex items-center justify-center h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full center-align">
+        
+        <div className={cardClasses}>
+          <h2 className={titleClasses}>ASDU &lt;=&gt; CASDU</h2>
+          <div className="space-y-4">
+            <div>
+              <label className="block mb-1">ASDU Address</label>
+              <input type="text" value={asduAddress} onChange={(e) => handleAsduChange(e.target.value)} className={inputClasses} />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block mb-1">ASDU Address</label>
-                <input type="text" value={asduAddress} onChange={(e) => handleAsduChange(e.target.value)} className={inputClasses} />
+                <label className="block mb-1">CASDU1</label>
+                <input type="text" value={casdu1} onChange={(e) => handleCasduChange(e.target.value, casdu2)} className={inputClasses} />
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block mb-1">CASDU1</label>
-                  <input type="text" value={casdu1} onChange={(e) => handleCasduChange(e.target.value, casdu2)} className={inputClasses} />
-                </div>
-                <div>
-                  <label className="block mb-1">CASDU2</label>
-                  <input type="text" value={casdu2} onChange={(e) => handleCasduChange(casdu1, e.target.value)} className={inputClasses} />
-                </div>
+              <div>
+                <label className="block mb-1">CASDU2</label>
+                <input type="text" value={casdu2} onChange={(e) => handleCasduChange(casdu1, e.target.value)} className={inputClasses} />
               </div>
             </div>
           </div>
-
-          <div className={cardClasses}>
-            <h2 className={titleClasses}>IOA &lt;=&gt; IOA1/2/3</h2>
-            <div className="space-y-4">
-              <div>
-                <label className="block mb-1">IOA Address</label>
-                <input type="text" value={ioaAddress} onChange={(e) => handleIoaChange(e.target.value)} className={inputClasses} />
-              </div>
-              <div className="grid grid-cols-3 gap-4">
-                <div>
-                  <label className="block mb-1">IOA1</label>
-                  <input type="text" value={ioa1} onChange={(e) => handleIoa123Change(e.target.value, ioa2, ioa3)} className={inputClasses} />
-                </div>
-                <div>
-                  <label className="block mb-1">IOA2</label>
-                  <input type="text" value={ioa2} onChange={(e) => handleIoa123Change(ioa1, e.target.value, ioa3)} className={inputClasses} />
-                </div>
-                <div>
-                  <label className="block mb-1">IOA3</label>
-                  <input type="text" value={ioa3} onChange={(e) => handleIoa123Change(ioa1, ioa2, e.target.value)} className={inputClasses} />
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </main>
-    </div>
+
+        <div className={cardClasses}>
+          <h2 className={titleClasses}>IOA &lt;=&gt; IOA1/2/3</h2>
+          <div className="space-y-4">
+            <div>
+              <label className="block mb-1">IOA Address</label>
+              <input type="text" value={ioaAddress} onChange={(e) => handleIoaChange(e.target.value)} className={inputClasses} />
+            </div>
+            <div className="grid grid-cols-3 gap-4">
+              <div>
+                <label className="block mb-1">IOA1</label>
+                <input type="text" value={ioa1} onChange={(e) => handleIoa123Change(e.target.value, ioa2, ioa3)} className={inputClasses} />
+              </div>
+              <div>
+                <label className="block mb-1">IOA2</label>
+                <input type="text" value={ioa2} onChange={(e) => handleIoa123Change(ioa1, e.target.value, ioa3)} className={inputClasses} />
+              </div>
+              <div>
+                <label className="block mb-1">IOA3</label>
+                <input type="text" value={ioa3} onChange={(e) => handleIoa123Change(ioa1, ioa2, e.target.value)} className={inputClasses} />
+              </div>
+.
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:col-span-2">
+            <Iec104Packet />
+        </div>
+
+      </div>
+    </main>
   );
 }
