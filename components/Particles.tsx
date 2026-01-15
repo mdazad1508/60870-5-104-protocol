@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { type ISourceOptions } from "@tsparticles/slim";
+import type { ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Import loadSlim
 
 const ParticlesComponent = () => {
@@ -19,7 +19,7 @@ const ParticlesComponent = () => {
     });
   }, []);
 
-  const options: ISourceOptions = useMemo(
+  const options: any = useMemo(
     () => ({
       background: {
         color: {

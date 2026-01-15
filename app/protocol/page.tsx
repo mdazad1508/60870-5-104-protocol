@@ -514,8 +514,13 @@ const CommunicationParameters = () => (
     </div>
 );
 
+type CollapsibleSectionProps = {
+  title: string;
+  children: React.ReactNode;
+};
 
-const CollapsibleSection = ({ title, children }) => {
+
+const CollapsibleSection = ({ title, children }: CollapsibleSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
