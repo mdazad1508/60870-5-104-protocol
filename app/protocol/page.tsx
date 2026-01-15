@@ -144,102 +144,102 @@ const FrameFormats = () => (
 
 const DataTypes = () => {
   const monitoringDirection = [
-    { type: 'M_SP_NA_1', dec: '1', hex: '0x01', description: 'Single-point information' },
-    { type: 'M_SP_TA_1', dec: '2', hex: '0x02', description: 'Single-point information with time tag' },
-    { type: 'M_DP_NA_1', dec: '3', hex: '0x03', description: 'Double-point information' },
-    { type: 'M_DP_TA_1', dec: '4', hex: '0x04', description: 'Double-point information with time tag' },
-    { type: 'M_ST_NA_1', dec: '5', hex: '0x05', description: 'Step position information' },
-    { type: 'M_ST_TA_1', dec: '6', hex: '0x06', description: 'Step position information with time tag' },
-    { type: 'M_BO_NA_1', dec: '7', hex: '0x07', description: 'Bitstring of 32 bit' },
-    { type: 'M_BO_TA_1', dec: '8', hex: '0x08', description: 'Bitstring of 32 bit with time tag' },
-    { type: 'M_ME_NA_1', dec: '9', hex: '0x09', description: 'Measured value, normalised value' },
-    { type: 'M_ME_TA_1', dec: '10', hex: '0x0A', description: 'Measured value, normalized value with time tag' },
-    { type: 'M_ME_NB_1', dec: '11', hex: '0x0B', description: 'Measured value, scaled value' },
-    { type: 'M_ME_TB_1', dec: '12', hex: '0x0C', description: 'Measured value, scaled value wit time tag' },
-    { type: 'M_ME_NC_1', dec: '13', hex: '0x0D', description: 'Measured value, short floating point number' },
-    { type: 'M_ME_TC_1', dec: '14', hex: '0x0E', description: 'Measured value, short floating point number with time tag' },
-    { type: 'M_IT_NA_1', dec: '15', hex: '0x0F', description: 'Integrated totals' },
-    { type: 'M_IT_TA_1', dec: '16', hex: '0x10', description: 'Integrated totals with time tag' },
-    { type: 'M_EP_TA_1', dec: '17', hex: '0x11', description: 'Event of protection equipment with time tag' },
-    { type: 'M_EP_TB_1', dec: '18', hex: '0x12', description: 'Packed start events of protection equipment with time tag' },
-    { type: 'M_EP_TC_1', dec: '19', hex: '0x13', description: 'Packed output circuit information of protection equipment with time tag' },
-    { type: 'M_PS_NA_1', dec: '20', hex: '0x14', description: 'Packed single point information with status change detection' },
-    { type: 'M_ME_ND_1', dec: '21', hex: '0x15', description: 'Measured value, normalized value without quality descriptor' },
+    { type: 'M_SP_NA_1', dec: '1', description: 'Single-point information' },
+    { type: 'M_SP_TA_1', dec: '2', description: 'Single-point information with time tag' },
+    { type: 'M_DP_NA_1', dec: '3', description: 'Double-point information' },
+    { type: 'M_DP_TA_1', dec: '4', description: 'Double-point information with time tag' },
+    { type: 'M_ST_NA_1', dec: '5', description: 'Step position information' },
+    { type: 'M_ST_TA_1', dec: '6', description: 'Step position information with time tag' },
+    { type: 'M_BO_NA_1', dec: '7', description: 'Bitstring of 32 bit' },
+    { type: 'M_BO_TA_1', dec: '8', description: 'Bitstring of 32 bit with time tag' },
+    { type: 'M_ME_NA_1', dec: '9', description: 'Measured value, normalised value' },
+    { type: 'M_ME_TA_1', dec: '10', description: 'Measured value, normalized value with time tag' },
+    { type: 'M_ME_NB_1', dec: '11', description: 'Measured value, scaled value' },
+    { type: 'M_ME_TB_1', dec: '12', description: 'Measured value, scaled value wit time tag' },
+    { type: 'M_ME_NC_1', dec: '13', description: 'Measured value, short floating point number' },
+    { type: 'M_ME_TC_1', dec: '14', description: 'Measured value, short floating point number with time tag' },
+    { type: 'M_IT_NA_1', dec: '15', description: 'Integrated totals' },
+    { type: 'M_IT_TA_1', dec: '16', description: 'Integrated totals with time tag' },
+    { type: 'M_EP_TA_1', dec: '17', description: 'Event of protection equipment with time tag' },
+    { type: 'M_EP_TB_1', dec: '18', description: 'Packed start events of protection equipment with time tag' },
+    { type: 'M_EP_TC_1', dec: '19', description: 'Packed output circuit information of protection equipment with time tag' },
+    { type: 'M_PS_NA_1', dec: '20', description: 'Packed single point information with status change detection' },
+    { type: 'M_ME_ND_1', dec: '21', description: 'Measured value, normalized value without quality descriptor' },
 ];
 
 const monitoringDirectionCP56Time2a = [
-    { type: 'M_SP_TB_1', dec: '30', hex: '0x1E', description: 'Single-point information with time tag CP56Time2a' },
-    { type: 'M_DP_TB_1', dec: '31', hex: '0x1F', description: 'Double-point information with time tag CP56Time2a' },
-    { type: 'M_ST_TB_1', dec: '32', hex: '0x20', description: 'Step position information with time tag CP56Time2a' },
-    { type: 'M_BO_TB_1', dec: '33', hex: '0x21', description: 'Bitstring of 32 bit with time tag CP56Time2a' },
-    { type: 'M_ME_TD_1', dec: '34', hex: '0x22', description: 'Measured value, normalised value with time tag CP56Time2a' },
-    { type: 'M_ME_TE_1', dec: '35', hex: '0x23', description: 'Measured value, scaled value with time tag CP56Time2a' },
-    { type: 'M_ME_TF_1', dec: '36', hex: '0x24', description: 'Measured value, short floating point number with time tag CP56Time2a' },
-    { type: 'M_IT_TB_1', dec: '37', hex: '0x25', description: 'Integrated totals with time tag CP56Time2a' },
-    { type: 'M_EP_TD_1', dec: '38', hex: '0x26', description: 'Event of protection equipment with time tag CP56Time2a' },
-    { type: 'M_EP_TE_1', dec: '39', hex: '0x27', description: 'Packed start events of protection equipment with time tag CP56Time2a' },
-    { type: 'M_EP_TF_1', dec: '40', hex: '0x28', description: 'Packed output circuit information of protection equipment with time tag CP56Time2a' },
+    { type: 'M_SP_TB_1', dec: '30', description: 'Single-point information with time tag CP56Time2a' },
+    { type: 'M_DP_TB_1', dec: '31', description: 'Double-point information with time tag CP56Time2a' },
+    { type: 'M_ST_TB_1', dec: '32', description: 'Step position information with time tag CP56Time2a' },
+    { type: 'M_BO_TB_1', dec: '33', description: 'Bitstring of 32 bit with time tag CP56Time2a' },
+    { type: 'M_ME_TD_1', dec: '34', description: 'Measured value, normalised value with time tag CP56Time2a' },
+    { type: 'M_ME_TE_1', dec: '35', description: 'Measured value, scaled value with time tag CP56Time2a' },
+    { type: 'M_ME_TF_1', dec: '36', description: 'Measured value, short floating point number with time tag CP56Time2a' },
+    { type: 'M_IT_TB_1', dec: '37', description: 'Integrated totals with time tag CP56Time2a' },
+    { type: 'M_EP_TD_1', dec: '38', description: 'Event of protection equipment with time tag CP56Time2a' },
+    { type: 'M_EP_TE_1', dec: '39', description: 'Packed start events of protection equipment with time tag CP56Time2a' },
+    { type: 'M_EP_TF_1', dec: '40', description: 'Packed output circuit information of protection equipment with time tag CP56Time2a' },
 ];
 
 const controlDirection = [
-    { type: 'C_SC_NA_1', dec: '45', hex: '0x2D', description: 'Single command' },
-    { type: 'C_DC_NA_1', dec: '46', hex: '0x2E', description: 'Double command' },
-    { type: 'C_RC_NA_1', dec: '47', hex: '0x2F', description: 'Regulating step command' },
-    { type: 'C_SE_NA_1', dec: '48', hex: '0x30', description: 'Set-point Command, normalised value' },
-    { type: 'C_SE_NB_1', dec: '49', hex: '0x31', description: 'Set-point Command, scaled value' },
-    { type: 'C_SE_NC_1', dec: '50', hex: '0x32', description: 'Set-point Command, short floating point number' },
-    { type: 'C_BO_NA_1', dec: '51', hex: '0x33', description: 'Bitstring 32 bit command' },
+    { type: 'C_SC_NA_1', dec: '45', description: 'Single command' },
+    { type: 'C_DC_NA_1', dec: '46', description: 'Double command' },
+    { type: 'C_RC_NA_1', dec: '47', description: 'Regulating step command' },
+    { type: 'C_SE_NA_1', dec: '48', description: 'Set-point Command, normalised value' },
+    { type: 'C_SE_NB_1', dec: '49', description: 'Set-point Command, scaled value' },
+    { type: 'C_SE_NC_1', dec: '50', description: 'Set-point Command, short floating point number' },
+    { type: 'C_BO_NA_1', dec: '51', description: 'Bitstring 32 bit command' },
 ];
 
 const controlDirectionCP56Time2a = [
-    { type: 'C_SC_TA_1', dec: '58', hex: '0x3A', description: 'Single command with time tag CP56Time2a' },
-    { type: 'C_DC_TA_1', dec: '59', hex: '0x3B', description: 'Double command with time tag CP56Time2a' },
-    { type: 'C_RC_TA_1', dec: '60', hex: '0x3C', description: 'Regulating step command with time tag CP56Time2a' },
-    { type: 'C_SE_TA_1', dec: '61', hex: '0x3D', description: 'Measured value, normalised value command with time tag CP56Time2a' },
-    { type: 'C_SE_TB_1', dec: '62', hex: '0x3E', description: 'Measured value, scaled value command with time tag CP56Time2a' },
-    { type: 'C_SE_TC_1', dec: '63', hex: '0x3F', description: 'Measured value, short floating point number command with time tag CP56Time2a' },
-    { type: 'C_BO_TA_1', dec: '64', hex: '0x40', description: 'Bitstring of 32 bit command with time tag CP56Time2a' },
+    { type: 'C_SC_TA_1', dec: '58', description: 'Single command with time tag CP56Time2a' },
+    { type: 'C_DC_TA_1', dec: '59', description: 'Double command with time tag CP56Time2a' },
+    { type: 'C_RC_TA_1', dec: '60', description: 'Regulating step command with time tag CP56Time2a' },
+    { type: 'C_SE_TA_1', dec: '61', description: 'Measured value, normalised value command with time tag CP56Time2a' },
+    { type: 'C_SE_TB_1', dec: '62', description: 'Measured value, scaled value command with time tag CP56Time2a' },
+    { type: 'C_SE_TC_1', dec: '63', description: 'Measured value, short floating point number command with time tag CP56Time2a' },
+    { type: 'C_BO_TA_1', dec: '64', description: 'Bitstring of 32 bit command with time tag CP56Time2a' },
 ];
 
 const systemInformation = [
-    { type: 'M_EI_NA_1', dec: '70', hex: '0x46', description: 'End of Initialisation' },
-    { type: 'C_IC_NA_1', dec: '100', hex: '0x64', description: 'Interrogation command' },
-    { type: 'C_CI_NA_1', dec: '101', hex: '0x65', description: 'Counter interrogation command' },
-    { type: 'C_RD_NA_1', dec: '102', hex: '0x66', description: 'Read command' },
-    { type: 'C_CS_NA_1', dec: '103', hex: '0x67', description: 'Clock synchronisation command' },
-    { type: 'C_TS_NA_1', dec: '104', hex: '0x68', description: 'Test command' },
-    { type: 'C_RP_NA_1', dec: '105', hex: '0x69', description: 'Reset process command' },
-    { type: 'C_CD_NA_1', dec: '106', hex: '0x6A', description: 'Delay acquisition command' },
-    { type: 'C_TS_TA_1', dec: '107', hex: '0x6B', description: 'Test command with time tag CP56Time2a' },
+    { type: 'M_EI_NA_1', dec: '70', description: 'End of Initialisation' },
+    { type: 'C_IC_NA_1', dec: '100', description: 'Interrogation command' },
+    { type: 'C_CI_NA_1', dec: '101', description: 'Counter interrogation command' },
+    { type: 'C_RD_NA_1', dec: '102', description: 'Read command' },
+    { type: 'C_CS_NA_1', dec: '103', description: 'Clock synchronisation command' },
+    { type: 'C_TS_NA_1', dec: '104', description: 'Test command' },
+    { type: 'C_RP_NA_1', dec: '105', description: 'Reset process command' },
+    { type: 'C_CD_NA_1', dec: '106', description: 'Delay acquisition command' },
+    { type: 'C_TS_TA_1', dec: '107', description: 'Test command with time tag CP56Time2a' },
 ];
 
 const parameterCommands = [
-    { type: 'P_ME_NA_1', dec: '110', hex: '0x6E', description: 'Parameter of measured values, normalized value' },
-    { type: 'P_ME_NB_1', dec: '111', hex: '0x6F', description: 'Parameter of measured values, scaled value' },
-    { type: 'P_ME_NC_1', dec: '112', hex: '0x70', description: 'Parameter of measured values, short floating point number' },
-    { type: 'P_AC_NA_1', dec: '113', hex: '0x71', description: 'Parameter activation' },
+    { type: 'P_ME_NA_1', dec: '110', description: 'Parameter of measured values, normalized value' },
+    { type: 'P_ME_NB_1', dec: '111', description: 'Parameter of measured values, scaled value' },
+    { type: 'P_ME_NC_1', dec: '112', description: 'Parameter of measured values, short floating point number' },
+    { type: 'P_AC_NA_1', dec: '113', description: 'Parameter activation' },
 ];
 
 const fileTransfer = [
-    { type: 'F_FR_NA_1', dec: '120', hex: '0x78', description: 'File ready' },
-    { type: 'F_SR_NA_1', dec: '121', hex: '0x79', description: 'Section ready' },
-    { type: 'F_SC_NA_1', dec: '122', hex: '0x7A', description: 'Call directory, select file, call file, call section' },
-    { type: 'F_LS_NA_1', dec: '123', hex: '0x7B', description: 'Last section, last segment' },
-    { type: 'F_FA_NA_1', dec: '124', hex: '0x7C', description: 'ACK file, ACK section' },
-    { type: 'F_SG_NA_1', dec: '125', hex: '0x7D', description: 'Segment' },
-    { type: 'F_DR_TA_1', dec: '126', hex: '0x7E', description: 'Directory' },
+    { type: 'F_FR_NA_1', dec: '120', description: 'File ready' },
+    { type: 'F_SR_NA_1', dec: '121', description: 'Section ready' },
+    { type: 'F_SC_NA_1', dec: '122', description: 'Call directory, select file, call file, call section' },
+    { type: 'F_LS_NA_1', dec: '123', description: 'Last section, last segment' },
+    { type: 'F_FA_NA_1', dec: '124', description: 'ACK file, ACK section' },
+    { type: 'F_SG_NA_1', dec: '125', description: 'Segment' },
+    { type: 'F_DR_TA_1', dec: '126', description: 'Directory' },
 ];
 
 const reservedTypes = [
-    { type: 'ASDU_TYPEUNDEF', dec: '0', hex: '0x00', description: 'Not used' },
-    { type: 'ASDU_TYPE_22..29', dec: '22..29', hex: '0x16..0x1D', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_41..44', dec: '41..44', hex: '0x29..0x2C', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_52..57', dec: '52..57', hex: '0x34..0x39', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_65..69', dec: '65..69', hex: '0x41..0x45', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_71..99', dec: '71..99', hex: '0x47..0x63', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_108..109', dec: '108..109', hex: '0x6C..0x6D', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_114..119', dec: '114..119', hex: '0x72..0x77', description: 'Reserved (standard area)' },
-    { type: 'ASDU_TYPE_127..255', dec: '127..255', hex: '0x7F..0xFF', description: 'Reserved (user area)' },
+    { type: 'ASDU_TYPEUNDEF', dec: '0', description: 'Not used' },
+    { type: 'ASDU_TYPE_22..29', dec: '22..29', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_41..44', dec: '41..44', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_52..57', dec: '52..57', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_65..69', dec: '65..69', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_71..99', dec: '71..99', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_108..109', dec: '108..109', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_114..119', dec: '114..119', description: 'Reserved (standard area)' },
+    { type: 'ASDU_TYPE_127..255', dec: '127..255', description: 'Reserved (user area)' },
 ];
   
   return (
@@ -256,7 +256,7 @@ const reservedTypes = [
             <tr>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-              <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
             </tr>
           </thead>
@@ -265,7 +265,7 @@ const reservedTypes = [
               <tr key={item.type}>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
               </tr>
             ))}
@@ -280,7 +280,7 @@ const reservedTypes = [
             <tr>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-              <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
             </tr>
           </thead>
@@ -289,7 +289,7 @@ const reservedTypes = [
               <tr key={item.type}>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
               </tr>
             ))}
@@ -304,7 +304,7 @@ const reservedTypes = [
             <tr>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-              <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
             </tr>
           </thead>
@@ -313,7 +313,7 @@ const reservedTypes = [
               <tr key={item.type}>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
               </tr>
             ))}
@@ -328,7 +328,7 @@ const reservedTypes = [
             <tr>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-              <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+
               <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
             </tr>
           </thead>
@@ -337,7 +337,7 @@ const reservedTypes = [
               <tr key={item.type}>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+
                 <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
               </tr>
             ))}
@@ -351,7 +351,7 @@ const reservedTypes = [
                 <tr>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-                    <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+      
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
                 </tr>
             </thead>
@@ -360,7 +360,7 @@ const reservedTypes = [
                     <tr key={item.type}>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                        <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+        
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
                     </tr>
                 ))}
@@ -374,7 +374,7 @@ const reservedTypes = [
                 <tr>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-                    <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+      
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
                 </tr>
             </thead>
@@ -383,7 +383,7 @@ const reservedTypes = [
                     <tr key={item.type}>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                        <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+        
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
                     </tr>
                 ))}
@@ -397,7 +397,7 @@ const reservedTypes = [
                 <tr>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-                    <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+      
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
                 </tr>
             </thead>
@@ -406,7 +406,7 @@ const reservedTypes = [
                     <tr key={item.type}>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                        <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+        
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
                     </tr>
                 ))}
@@ -420,7 +420,7 @@ const reservedTypes = [
                 <tr>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Type</th>
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Dec</th>
-                    <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Hex</th>
+      
                     <th className="border-b-2 border-gray-200 dark:border-gray-700 p-2">Description</th>
                 </tr>
             </thead>
@@ -429,7 +429,7 @@ const reservedTypes = [
                     <tr key={item.type}>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.type}</td>
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.dec}</td>
-                        <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.hex}</td>
+        
                         <td className="border-b border-gray-200 dark:border-gray-700 p-2">{item.description}</td>
                     </tr>
                 ))}
@@ -520,7 +520,7 @@ type CollapsibleSectionProps = {
 };
 
 
-const CollapsibleSection = ({ title, children }: CollapsibleSectionProps) => {
+const CollapsibleSection = ({ title, children }:CollapsibleSectionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
